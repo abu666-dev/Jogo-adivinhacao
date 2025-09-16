@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da Adivinhação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Adivinhação</h1>
+        <form method="POST">
+            <input type="number" name="palpite" placeholder="Digite seu palpite (1 a 10)" required>
+            <button type="submit">Chutar</button>
+        </form>
+        <p>{{ mensagem }}</p>
+    </div>
+</body>
+</html>
